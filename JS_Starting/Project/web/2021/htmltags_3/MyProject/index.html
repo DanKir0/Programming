@@ -1,0 +1,68 @@
+<!-- Сообщаем браузеру, как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа. Указываем язык содержимого -->
+<html lang="ru">
+    <!-- Заголовок страницы. Контейнер для других важных данных (Не отображается.) -->
+    <head>
+        <!-- Заголовок страницы в браузере -->
+        <title>Знакомство с html тегами. Часть 3</title>
+        <!-- Кодировка страницы -->
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <!-- Отображаемое тело страницы -->
+    <body>
+      <form action="#" method="post" enctype="multipart/form-data" >
+        <p>Имя пользователя</p>
+        <div>
+            <input tabindex="1" placeholder="Имя" type="text" name="username" value="">
+        </div>
+        <p>Пароль</p>
+        <div>
+            <input tabindex="2" placeholder="Пароль" type="password" name="userpass" value="">
+        </div>
+        <p>Телефон</p>
+        <div>
+            <input tabindex="3" placeholder="+7" type="tel" name="usertel" value="">
+        </div>
+        <p>Пол</p>
+        <div>
+            <p><input tabindex="4" type="radio" name="gender" value="male"> Мужской</p>
+            <p><input tabindex="4" type="radio" name="gender" value="female"> Женский</p>
+            <p><input tabindex="4" checked type="radio" name="gender" value="uncomind"> Неопределено</p>
+        </div>
+        <p>Имущество</p>
+        <div>
+            <p><input tabindex="5" type="checkbox" name="home" value="yes"> Квартира</p>
+            <p><input tabindex="6" type="checkbox" name="car" value="yes"> Машина</p>
+            <p><input tabindex="7" disabled type="checkbox" name="countryHouse" value="yes"> Дача</p>
+            <p><input tabindex="8" checked type="checkbox" name="other" value="yes"> Другое</p>
+        </div>
+        <p>Кратко о себе:</p>
+        <div>
+            <textarea tabindex="9" name="yourself" cols="20" rows="2"></textarea>
+        </div>
+        <p>Прикрепить фото</p>
+        <div>
+            <input tabindex="10" type="file" name="photo">
+        </div>
+        <p>Любимый цвет</p>
+        <div>
+            <select tabindex="11" name="color">
+                <option value="red">Красный</option>
+                <option value="orange">Оранжевый</option>
+                <option value="yellow">Желтый</option>
+                <option value="green">Зеленый</option>
+                <option value="blue">Голубой/Синий</option>
+                <option value="purple">Фиолетовый</option>
+                <option selected value="black">Черный</option>
+                <option value="while">Белый</option>
+            </select>
+        </div>
+        <p>Действия</p>
+        <div>
+            <button tabindex="12" type="submit">Отправить</button>
+            <button tabindex="13" type="reset">Сбросить</button>
+        </div>
+      </form>
+    </body>
+</html>
